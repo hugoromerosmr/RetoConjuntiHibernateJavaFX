@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="1055.0" stylesheets="@../estilos.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retoconjuntohibernatejavafx.controllers.FilmController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="1055.0" stylesheets="@../styles/estilos.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retoconjuntohibernatejavafx.controllers.FilmController">
    <center>
       <VBox prefHeight="573.0" prefWidth="940.0" BorderPane.alignment="CENTER">
          <children>
@@ -20,7 +20,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="21.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../llave.png" />
+                              <Image url="@../img/llave.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -32,7 +32,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../salida-de-la-puerta.png" />
+                              <Image url="@../img/salida-de-la-puerta.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -42,7 +42,7 @@
                   </Button>
                   <ImageView fitHeight="275.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../DALL_E-2024-11-07-13.41-removebg-preview.png" />
+                        <Image url="@../img/DALL_E-2024-11-07-13.41-removebg-preview.png" />
                      </image>
                      <FlowPane.margin>
                         <Insets top="-60.0" />

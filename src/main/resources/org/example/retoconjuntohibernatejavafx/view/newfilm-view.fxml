@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="border" prefHeight="745.0" prefWidth="835.0" stylesheets="@../estilos.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retoconjuntohibernatejavafx.controllers.NewFilmController">
+<BorderPane fx:id="border" prefHeight="745.0" prefWidth="835.0" stylesheets="@../styles/estilos.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retoconjuntohibernatejavafx.controllers.NewFilmController">
     <center>
         <ScrollPane fx:id="scroll1" fitToHeight="true" fitToWidth="true" BorderPane.alignment="CENTER">
             <content>
@@ -21,7 +21,7 @@
                     <children>
                         <ImageView fx:id="imgcopia" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../DALL_E-2024-11-07-13.41-removebg-preview.png" />
+                                <Image url="@../img/DALL_E-2024-11-07-13.41-removebg-preview.png" />
                             </image>
                         </ImageView>
                   <Label text="Título Película" />

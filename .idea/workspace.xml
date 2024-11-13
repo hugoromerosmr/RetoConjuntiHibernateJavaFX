@@ -4,45 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44e48b22-87e7-464f-8cfb-ff752e05d3f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/HibernateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/DetailsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/FilmController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/NewFilmController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/NewcopyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/CopiaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/PeliculaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/UsuarioDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/models/Copia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/models/CurrentSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/models/Pelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/models/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/borrar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/admin-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/detaills-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/film-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/newcopy.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/newfilm-view.fxml" afterDir="false" />
+    <list default="true" id="44e48b22-87e7-464f-8cfb-ff752e05d3f1" name="Changes" comment="FINAL">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/RegistrerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/registrer-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/HibernateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/Hibernate/HibernateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/DetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/DetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/FilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/FilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/NewFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/NewFilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/NewcopyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/NewcopyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/PeliculaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/PeliculaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/UsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/borrar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/multimedia/borrar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/admin-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/detaills-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/detaills-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/film-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/film-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/newcopy.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/newcopy.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/newfilm-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/newfilm-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +44,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "hugoromerosmr"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/hugoromerosmr/RetoConjuntiHibernateJavaFX.git",
+    "accountId": "39ce3f30-4e1d-445b-a389-295cc3caa816"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -108,6 +103,8 @@
       <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\resources\org\example\retoconjuntohibernatejavafx\multimedia" />
+      <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\resources\org\example\retoconjuntohibernatejavafx\styles" />
       <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\resources\org\example\retoconjuntohibernatejavafx" />
       <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\java\org\example\retoconjuntohibernatejavafx\controllers" />
       <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\resources\org\example\retoconjuntohibernatejavafx\view" />
@@ -160,11 +157,24 @@
       <workItem from="1731394606226" duration="5473000" />
       <workItem from="1731404909595" duration="5813000" />
       <workItem from="1731414476739" duration="419000" />
-      <workItem from="1731490103254" duration="351000" />
+      <workItem from="1731490103254" duration="8793000" />
     </task>
+    <task id="LOCAL-00001" summary="FINAL">
+      <option name="closed" value="true" />
+      <created>1731490519574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731490519574</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FINAL" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINAL" />
   </component>
 </project>

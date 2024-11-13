@@ -1,14 +1,11 @@
 package org.example.retoconjuntohibernatejavafx.dao;
 
-import org.example.retoconjuntohibernatejavafx.HibernateUtils;
-import org.example.retoconjuntohibernatejavafx.models.Copia;
-import org.example.retoconjuntohibernatejavafx.models.CurrentSession;
+import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.models.Pelicula;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 
-import java.util.Currency;
 import java.util.List;
 
 public class PeliculaDAO {

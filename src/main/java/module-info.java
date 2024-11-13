@@ -5,6 +5,7 @@ module org.example.retoconjuntohibernatejavafx {
     requires static lombok;
     requires org.hibernate.orm.core;
     requires java.naming;
+    requires jbcrypt;
 
     opens org.example.retoconjuntohibernatejavafx to javafx.fxml;
     exports org.example.retoconjuntohibernatejavafx;
@@ -14,4 +15,6 @@ module org.example.retoconjuntohibernatejavafx {
 
     exports org.example.retoconjuntohibernatejavafx.controllers;
     opens org.example.retoconjuntohibernatejavafx.controllers to javafx.fxml;
+    exports org.example.retoconjuntohibernatejavafx.Hibernate;
+    opens org.example.retoconjuntohibernatejavafx.Hibernate to javafx.fxml;
 }

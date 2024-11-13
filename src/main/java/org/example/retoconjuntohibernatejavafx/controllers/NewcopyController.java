@@ -8,7 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
-import org.example.retoconjuntohibernatejavafx.HibernateUtils;
+import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.CopiaDAO;
 import org.example.retoconjuntohibernatejavafx.dao.PeliculaDAO;
 import org.example.retoconjuntohibernatejavafx.models.Copia;

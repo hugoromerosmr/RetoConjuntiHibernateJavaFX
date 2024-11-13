@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
-import org.example.retoconjuntohibernatejavafx.HibernateUtils;
+import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.CopiaDAO;
 import org.example.retoconjuntohibernatejavafx.models.CurrentSession;
 

@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../estilos.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retoconjuntohibernatejavafx.controllers.HelloController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/estilos.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retoconjuntohibernatejavafx.controllers.HelloController">
    <center>
       <VBox alignment="CENTER" prefHeight="421.0" prefWidth="461.0" spacing="100.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -23,7 +23,7 @@
          <children>
             <ImageView fx:id="img" fitHeight="122.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../DALL_E-2024-11-07-13.41-removebg-preview.png" />
+                  <Image url="@../img/DALL_E-2024-11-07-13.41-removebg-preview.png" />
                </image>
                <VBox.margin>
                   <Insets bottom="35.0" />
@@ -52,6 +52,11 @@
                   <Insets right="20.0" />
                </opaqueInsets>
             </GridPane>
+            <Button fx:id="buttonregistro" mnemonicParsing="false" onAction="#registrar" opacity="0.72" text="¿Es tu primera vez por aquí?">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
             <FlowPane alignment="CENTER" hgap="30.0" prefHeight="73.0" prefWidth="372.0">
                <children>
                   <Button fx:id="buttonacceder" alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#acceder" prefHeight="42.0" prefWidth="109.0" text="Acceder">
@@ -79,7 +84,7 @@
    <left>
       <ImageView fx:id="gif" fitHeight="210.0" fitWidth="177.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../reel-8561_256.gif" />
+            <Image url="@../img/reel-8561_256.gif" />
          </image>
          <BorderPane.margin>
             <Insets left="-20.0" />

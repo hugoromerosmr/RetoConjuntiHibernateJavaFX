@@ -26,7 +26,7 @@ public class UsuarioDAO implements DAO<Usuario> {
 
     @Override
     public void save(Usuario usuario) {
-
+        sessionFactory.inTransaction((session) -> session.persist(usuario));
     }
 
     @Override

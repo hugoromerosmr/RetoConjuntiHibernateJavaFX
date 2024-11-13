@@ -3,27 +3,20 @@ package org.example.retoconjuntohibernatejavafx.controllers;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
-import org.example.retoconjuntohibernatejavafx.HibernateUtils;
-import org.example.retoconjuntohibernatejavafx.dao.CopiaDAO;
-import org.example.retoconjuntohibernatejavafx.dao.PeliculaDAO;
+import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.UsuarioDAO;
 import org.example.retoconjuntohibernatejavafx.models.CurrentSession;
 import org.example.retoconjuntohibernatejavafx.models.Usuario;
-import org.hibernate.SessionFactory;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 import static org.example.retoconjuntohibernatejavafx.HelloApplication.sessionFactory;
@@ -36,6 +29,16 @@ public class HelloController implements Initializable {
     private PasswordField fieldpassword;
     @FXML
     private Label info;
+    @FXML
+    private Button buttonregistro;
+    @FXML
+    private Button buttonclose;
+    @FXML
+    private ImageView img;
+    @FXML
+    private ImageView gif;
+    @FXML
+    private Button buttonacceder;
 
     public HelloController() {}
 
@@ -44,7 +47,6 @@ public class HelloController implements Initializable {
         String nombre = fieldusername.getText();
         String password = fieldpassword.getText();
         Usuario usuario = new UsuarioDAO(HibernateUtils.getSessionFactory()).findUserLogin(nombre,password);
-
 
             CurrentSession.currentUser = usuario;
             sessionFactory = HibernateUtils.getSessionFactory();
@@ -63,5 +65,10 @@ public class HelloController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+    }
+
+    @FXML
+    public void registrar(ActionEvent actionEvent) {
+        HelloApplication.loadFXML("view/registrer-view.fxml", "Vista de registro");
     }
 }
