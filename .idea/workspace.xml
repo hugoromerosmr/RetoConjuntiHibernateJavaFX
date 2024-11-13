@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44e48b22-87e7-464f-8cfb-ff752e05d3f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/HibernateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/DetailsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/FilmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/NewFilmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/controllers/NewcopyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/CopiaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/PeliculaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/dao/UsuarioDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/models/Copia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/models/CurrentSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/models/Pelicula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/retoconjuntohibernatejavafx/models/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/borrar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/admin-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/detaills-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/film-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/newcopy.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/retoconjuntohibernatejavafx/view/newfilm-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.intellij.jpb.JpaEntity" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2oU9VhrgLpoIoOt1WegpYs0dH1V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MyMovies.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DAM/Desktop/Hibernate/RetoConjuntoHibernateJavaFX/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\resources\org\example\retoconjuntohibernatejavafx" />
+      <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\java\org\example\retoconjuntohibernatejavafx\controllers" />
+      <recent name="C:\Users\DAM\Desktop\Hibernate\RetoConjuntoHibernateJavaFX\src\main\resources\org\example\retoconjuntohibernatejavafx\view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.retoconjuntohibernatejavafx" />
+      <recent name="org.example.retoconjuntohibernatejavafx.dao" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyMovies" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-23" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="MYSQL_ROOT_PASSWORD" value="mysql" />
+        <env name="MYSQL_USER" value="root" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="org.example.retoconjuntohibernatejavafx.HelloApplication" />
+      <module name="RetoConjuntoHibernateJavaFX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44e48b22-87e7-464f-8cfb-ff752e05d3f1" name="Changes" comment="" />
+      <created>1730913314289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730913314289</updated>
+      <workItem from="1730913314983" duration="2644000" />
+      <workItem from="1730977390696" duration="5993000" />
+      <workItem from="1730992088965" duration="6980000" />
+      <workItem from="1731001376141" duration="2489000" />
+      <workItem from="1731049222467" duration="5198000" />
+      <workItem from="1731309898186" duration="233000" />
+      <workItem from="1731313023276" duration="715000" />
+      <workItem from="1731315937634" duration="7000" />
+      <workItem from="1731340196089" duration="10641000" />
+      <workItem from="1731394606226" duration="5473000" />
+      <workItem from="1731404909595" duration="5813000" />
+      <workItem from="1731414476739" duration="419000" />
+      <workItem from="1731490103254" duration="351000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

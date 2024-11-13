@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="border" prefHeight="745.0" prefWidth="835.0" stylesheets="@../estilos.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retoconjuntohibernatejavafx.controllers.NewcopyController">
+    <center>
+        <ScrollPane fx:id="scroll1" fitToHeight="true" fitToWidth="true" BorderPane.alignment="CENTER">
+            <content>
+                <VBox fx:id="scroll" alignment="CENTER" prefWidth="743.0" spacing="15.0">
+                    <children>
+                        <ImageView fx:id="imgcopia" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../DALL_E-2024-11-07-13.41-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <!-- Película seleccionada -->
+                        <Label text="Seleccionar Película" />
+                        <ComboBox fx:id="peliculasComboBox" maxWidth="200.0" prefWidth="150.0" />
+                        <Label text="Cantidad" />
+                        <Spinner fx:id="cantidadcopia" maxWidth="200.0" />
+                        <Label text="Formato" />
+                        <ComboBox fx:id="formatocopia" maxWidth="200.0" prefWidth="150.0" />
+                        <Label text="Estado" />
+                        <ComboBox fx:id="estadocopia" maxWidth="200.0" prefWidth="150.0" />
+                        <FlowPane alignment="CENTER" hgap="30.0" prefHeight="200.0">
+                            <children>
+                                <Button fx:id="buttonsave" mnemonicParsing="false" onAction="#savecopia" text="Guardar Copia" />
+                                <Button fx:id="buttonexit" mnemonicParsing="false" onAction="#exitcopia" text="Salir" />
+                            </children>
+                        </FlowPane>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
