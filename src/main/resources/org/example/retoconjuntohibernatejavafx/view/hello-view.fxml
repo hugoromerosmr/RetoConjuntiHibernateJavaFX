@@ -21,7 +21,7 @@
             <Insets right="30.0" />
          </BorderPane.margin>
          <children>
-            <ImageView fx:id="img" fitHeight="122.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img" fitHeight="185.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/DALL_E-2024-11-07-13.41-removebg-preview.png" />
                </image>
@@ -39,9 +39,9 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" text="Usuario" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Correo Electrónico" />
                   <Label text="Contraseña" GridPane.rowIndex="1" />
-                  <TextField fx:id="fieldusername" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="161.0" promptText="Introducir nombre de usuario" text="maria.garcia@gmail.com" GridPane.columnIndex="1">
+                  <TextField fx:id="fieldusername" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="161.0" promptText="Introducir correo electrónico" text="maria.garcia@gmail.com" GridPane.columnIndex="1">
                      <opaqueInsets>
                         <Insets right="20.0" />
                      </opaqueInsets>

@@ -34,4 +34,7 @@ public class Copia {
     @Column(name = "formato", length = 50)
     private String formato;
 
+    @Column(name = "audio", length = 50)
+    private String audio;
+
 }

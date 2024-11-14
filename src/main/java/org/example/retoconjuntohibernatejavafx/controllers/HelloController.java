@@ -10,7 +10,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
-import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
+import org.example.retoconjuntohibernatejavafx.utils.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.UsuarioDAO;
 import org.example.retoconjuntohibernatejavafx.models.CurrentSession;
 import org.example.retoconjuntohibernatejavafx.models.Usuario;

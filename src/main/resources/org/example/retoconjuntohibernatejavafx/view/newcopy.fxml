@@ -31,6 +31,8 @@
                         <ComboBox fx:id="formatocopia" maxWidth="200.0" prefWidth="150.0" />
                         <Label text="Estado" />
                         <ComboBox fx:id="estadocopia" maxWidth="200.0" prefWidth="150.0" />
+                  <Label text="Banda Sonora" />
+                  <Button fx:id="buttonSelectAudio" mnemonicParsing="false" onAction="#selectAudioFile" text="Añadir Banda Sonora" />
                         <FlowPane alignment="CENTER" hgap="30.0" prefHeight="200.0">
                             <children>
                                 <Button fx:id="buttonsave" mnemonicParsing="false" onAction="#savecopia" text="Guardar Copia" />

@@ -9,7 +9,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
-import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
+import org.example.retoconjuntohibernatejavafx.utils.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.CopiaDAO;
 import org.example.retoconjuntohibernatejavafx.models.Copia;
 import org.example.retoconjuntohibernatejavafx.models.CurrentSession;

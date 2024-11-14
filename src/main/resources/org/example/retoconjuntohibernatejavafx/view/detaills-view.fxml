@@ -31,6 +31,9 @@
                            </graphic>
                         </Button>
                      </children>
+                     <VBox.margin>
+                        <Insets bottom="-40.0" />
+                     </VBox.margin>
                   </FlowPane>
                   <ImageView fx:id="imgcopia" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>

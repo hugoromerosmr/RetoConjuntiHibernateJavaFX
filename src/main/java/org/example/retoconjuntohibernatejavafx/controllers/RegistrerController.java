@@ -9,7 +9,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
-import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
+import org.example.retoconjuntohibernatejavafx.utils.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.UsuarioDAO;
 import org.example.retoconjuntohibernatejavafx.models.Usuario;
 
@@ -51,7 +51,7 @@ public class RegistrerController implements Initializable {
             usuario.setRol(0L);
             usuario.setNombre(username.split("@")[0]);
             new UsuarioDAO(HibernateUtils.getSessionFactory()).save(usuario);
-            HelloApplication.loadFXML("view/film-view.fxml","Login");
+            HelloApplication.loadFXML("view/hello-view.fxml","Login");
         }else info.setText("Las contraseñas no coinciden");
 
     }

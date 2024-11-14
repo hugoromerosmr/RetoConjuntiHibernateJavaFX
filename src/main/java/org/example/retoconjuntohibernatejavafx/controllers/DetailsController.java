@@ -5,7 +5,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
-import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
+import org.example.retoconjuntohibernatejavafx.utils.AudioPlayer;
+import org.example.retoconjuntohibernatejavafx.utils.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.CopiaDAO;
 import org.example.retoconjuntohibernatejavafx.models.CurrentSession;
 
@@ -13,7 +14,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class DetailsController implements Initializable {
-
 
     @FXML
     private TextField generopeli;
@@ -38,9 +38,11 @@ public class DetailsController implements Initializable {
     @FXML
     private ComboBox<String> formatocopia;
 
+    private AudioPlayer audioPlayer;
+
     @FXML
     public void savecopia(ActionEvent actionEvent) {
-
+        // Guarda los cambios en la copia actual y actualiza la base de datos
         String nuevoFormato = formatocopia.getValue();
         int nuevaCantidad = cantidadcopia.getValue();
 
@@ -49,22 +51,37 @@ public class DetailsController implements Initializable {
 
         new CopiaDAO(HibernateUtils.getSessionFactory()).update(CurrentSession.currentCopia);
         HelloApplication.loadFXML("view/film-view.fxml", "Lista Copias");
+        stopAudio();
     }
-
-
 
     @FXML
     public void exitcopia(ActionEvent actionEvent) {
+        stopAudio();  // Detiene el audio al salir
         HelloApplication.loadFXML("view/film-view.fxml", "Lista Copias");
     }
 
     @FXML
     public void deletecopia(ActionEvent actionEvent) {
-
         new CopiaDAO(HibernateUtils.getSessionFactory()).delete(CurrentSession.currentCopia);
+        stopAudio();  // Detiene el audio antes de salir
         HelloApplication.loadFXML("view/film-view.fxml", "Lista Copias");
-
     }
+
+    private void playSoundtrack() {
+        String audioFile = CurrentSession.currentCopia.getAudio();
+        if (audioFile != null) {
+            audioPlayer.playSoundtrack(audioFile);
+        } else {
+            System.out.println("No hay pista de audio asignada a esta copia.");
+        }
+    }
+
+    public void stopAudio() {
+        if (audioPlayer != null) {
+            audioPlayer.stopSoundtrack();
+        }
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         titulopeli.setText(CurrentSession.currentCopia.getPelicula().getTitulo());
@@ -82,5 +99,9 @@ public class DetailsController implements Initializable {
 
         SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, CurrentSession.currentCopia.getCantidad());
         cantidadcopia.setValueFactory(valueFactory);
+
+        audioPlayer = new AudioPlayer();
+        playSoundtrack();
     }
 }
+

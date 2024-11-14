@@ -6,7 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
-import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
+import org.example.retoconjuntohibernatejavafx.utils.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.PeliculaDAO;
 import org.example.retoconjuntohibernatejavafx.models.Pelicula;
 import org.example.retoconjuntohibernatejavafx.models.Usuario;

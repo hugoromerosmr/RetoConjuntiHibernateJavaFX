@@ -1,6 +1,6 @@
 package org.example.retoconjuntohibernatejavafx.dao;
 
-import org.example.retoconjuntohibernatejavafx.Hibernate.HibernateUtils;
+import org.example.retoconjuntohibernatejavafx.utils.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.models.Pelicula;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
