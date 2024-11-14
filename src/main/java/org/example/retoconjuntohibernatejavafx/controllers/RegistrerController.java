@@ -16,6 +16,10 @@ import org.example.retoconjuntohibernatejavafx.models.Usuario;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * Controlador para la vista de registro de usuarios.
+ * Permite la creación de una nueva cuenta de usuario con email y contraseña.
+ */
 public class RegistrerController implements Initializable {
     @FXML
     private Button buttonregistrar;
@@ -34,30 +38,49 @@ public class RegistrerController implements Initializable {
     @FXML
     private Label info;
 
+    /**
+     * Inicializa la vista de registro.
+     * No se requiere configuración adicional en este caso.
+     *
+     * @param url            La URL utilizada para resolver rutas relativas.
+     * @param resourceBundle Los recursos que se utilizan para localizar los elementos de la vista.
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        // No se necesita configuración adicional en este momento
     }
 
+    /**
+     * Registra un nuevo usuario en la base de datos si las contraseñas coinciden.
+     * Muestra un mensaje de error si las contraseñas no coinciden.
+     *
+     * @param actionEvent Evento de acción del botón de registrar.
+     */
     @FXML
     public void registrar(ActionEvent actionEvent) {
         String username = fieldusername.getText();
         String password = "";
         if (fieldpassword.getText().equals(fieldpassword2.getText())) {
-             password = fieldpassword.getText();
+            password = fieldpassword.getText();
             Usuario usuario = new Usuario();
             usuario.setEmail(username);
             usuario.setContraseña(password);
             usuario.setRol(0L);
             usuario.setNombre(username.split("@")[0]);
             new UsuarioDAO(HibernateUtils.getSessionFactory()).save(usuario);
-            HelloApplication.loadFXML("view/hello-view.fxml","Login");
-        }else info.setText("Las contraseñas no coinciden");
-
+            HelloApplication.loadFXML("view/hello-view.fxml", "Login");
+        } else {
+            info.setText("Las contraseñas no coinciden");
+        }
     }
 
+    /**
+     * Cierra la vista de registro y regresa a la vista de inicio de sesión.
+     *
+     * @param actionEvent Evento de acción del botón de cerrar.
+     */
     @FXML
     public void close(ActionEvent actionEvent) {
-        HelloApplication.loadFXML("view/hello-view.fxml","Login");
+        HelloApplication.loadFXML("view/hello-view.fxml", "Login");
     }
 }

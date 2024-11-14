@@ -21,6 +21,10 @@ import java.util.ResourceBundle;
 
 import static org.example.retoconjuntohibernatejavafx.HelloApplication.sessionFactory;
 
+/**
+ * Controlador para la vista de inicio de sesión.
+ * Permite a los usuarios iniciar sesión, registrarse o cerrar la aplicación.
+ */
 public class HelloController implements Initializable {
 
     @FXML
@@ -40,33 +44,59 @@ public class HelloController implements Initializable {
     @FXML
     private Button buttonacceder;
 
+    /**
+     * Constructor vacío para el controlador de la vista de inicio de sesión.
+     */
     public HelloController() {}
 
+    /**
+     * Autentica al usuario en función de las credenciales ingresadas y
+     * redirige a la vista correspondiente según el rol del usuario.
+     *
+     * @param actionEvent Evento de acción para el botón de acceder.
+     * @throws IOException Si ocurre un error al cargar la vista de destino.
+     */
     @FXML
     public void acceder(ActionEvent actionEvent) throws IOException {
         String nombre = fieldusername.getText();
         String password = fieldpassword.getText();
-        Usuario usuario = new UsuarioDAO(HibernateUtils.getSessionFactory()).findUserLogin(nombre,password);
+        Usuario usuario = new UsuarioDAO(HibernateUtils.getSessionFactory()).findUserLogin(nombre, password);
 
-            CurrentSession.currentUser = usuario;
-            sessionFactory = HibernateUtils.getSessionFactory();
-            if (usuario.getRol()==0) {
-                HelloApplication.loadFXML("view/film-view.fxml", "Vista de peliculas");
-            }else if (usuario.getRol()==1) {
-                HelloApplication.loadFXML("view/admin-view.fxml", "Vista de administrador");
-            }
+        CurrentSession.currentUser = usuario;
+        sessionFactory = HibernateUtils.getSessionFactory();
+        if (usuario.getRol() == 0) {
+            HelloApplication.loadFXML("view/film-view.fxml", "Vista de peliculas");
+        } else if (usuario.getRol() == 1) {
+            HelloApplication.loadFXML("view/admin-view.fxml", "Vista de administrador");
+        }
     }
 
+    /**
+     * Cierra la aplicación al hacer clic en el botón de cierre.
+     *
+     * @param actionEvent Evento de acción para el botón de cerrar.
+     */
     @FXML
     public void close(ActionEvent actionEvent) {
         Platform.exit();
     }
 
+    /**
+     * Inicializa los elementos de la vista de inicio de sesión.
+     *
+     * @param url            La URL utilizada para resolver rutas relativas.
+     * @param resourceBundle Los recursos que se utilizan para localizar los elementos de la vista.
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        // Inicialización adicional puede ir aquí si es necesario
     }
 
+    /**
+     * Redirige al usuario a la vista de registro para crear una nueva cuenta.
+     *
+     * @param actionEvent Evento de acción para el botón de registro.
+     */
     @FXML
     public void registrar(ActionEvent actionEvent) {
         HelloApplication.loadFXML("view/registrer-view.fxml", "Vista de registro");

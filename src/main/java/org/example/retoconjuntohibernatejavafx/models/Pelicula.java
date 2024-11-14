@@ -32,6 +32,9 @@ public class Pelicula {
     @Column(name = "clasificacion", length = 50)
     private String clasificacion;
 
+    @Column(name = "video_id")
+    private String videoId;
+
     @Override
     public String toString() {
         return "Pelicula{" +

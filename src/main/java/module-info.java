@@ -1,13 +1,11 @@
 module org.example.retoconjuntohibernatejavafx {
-    requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.media;  // Agrega este módulo para soporte de audio
     requires jakarta.persistence;
     requires static lombok;
     requires org.hibernate.orm.core;
     requires java.naming;
-    requires jbcrypt;
-    requires javafx.graphics;
+    requires javafx.web;
+    requires javafx.media;
 
     opens org.example.retoconjuntohibernatejavafx to javafx.fxml;
     exports org.example.retoconjuntohibernatejavafx;
@@ -17,7 +15,6 @@ module org.example.retoconjuntohibernatejavafx {
 
     exports org.example.retoconjuntohibernatejavafx.controllers;
     opens org.example.retoconjuntohibernatejavafx.controllers to javafx.fxml;
-
     exports org.example.retoconjuntohibernatejavafx.utils;
     opens org.example.retoconjuntohibernatejavafx.utils to javafx.fxml;
 }

@@ -36,6 +36,8 @@
                   <Spinner fx:id="duracion" />
                   <Label layoutX="399.0" layoutY="431.0" text="Clasificación" />
                   <ComboBox fx:id="clasificacion" prefWidth="150.0" />
+                  <Label text="ID TRAILER" />
+                  <TextField fx:id="idvideo" maxWidth="250.0" prefWidth="150.0" />
                         <FlowPane alignment="CENTER" hgap="30.0" prefHeight="200.0">
                             <children>
                                 <Button fx:id="buttonsave" mnemonicParsing="false" onAction="#savefilm" text="Guardar Pelicula" />

@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import org.example.retoconjuntohibernatejavafx.HelloApplication;
+import org.example.retoconjuntohibernatejavafx.dao.PeliculaDAO;
 import org.example.retoconjuntohibernatejavafx.utils.AudioPlayer;
 import org.example.retoconjuntohibernatejavafx.utils.HibernateUtils;
 import org.example.retoconjuntohibernatejavafx.dao.CopiaDAO;
@@ -13,6 +14,11 @@ import org.example.retoconjuntohibernatejavafx.models.CurrentSession;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * Controlador para la vista de detalles de la copia de una película.
+ * Permite visualizar la información de la copia, actualizar sus datos,
+ * eliminar la copia y reproducir una pista de audio asociada.
+ */
 public class DetailsController implements Initializable {
 
     @FXML
@@ -40,9 +46,14 @@ public class DetailsController implements Initializable {
 
     private AudioPlayer audioPlayer;
 
+    /**
+     * Guarda los cambios realizados en la copia actual, incluyendo
+     * el formato y la cantidad, y detiene el audio al salir.
+     *
+     * @param actionEvent El evento de acción del botón de guardar.
+     */
     @FXML
     public void savecopia(ActionEvent actionEvent) {
-        // Guarda los cambios en la copia actual y actualiza la base de datos
         String nuevoFormato = formatocopia.getValue();
         int nuevaCantidad = cantidadcopia.getValue();
 
@@ -54,19 +65,37 @@ public class DetailsController implements Initializable {
         stopAudio();
     }
 
+    /**
+     * Cierra la vista de detalles de la copia y detiene el audio.
+     *
+     * @param actionEvent El evento de acción del botón de salida.
+     */
     @FXML
     public void exitcopia(ActionEvent actionEvent) {
         stopAudio();  // Detiene el audio al salir
         HelloApplication.loadFXML("view/film-view.fxml", "Lista Copias");
     }
 
+    /**
+     * Elimina la copia actual tras confirmar la acción con el usuario y detiene el audio.
+     *
+     * @param actionEvent El evento de acción del botón de eliminar.
+     */
     @FXML
     public void deletecopia(ActionEvent actionEvent) {
-        new CopiaDAO(HibernateUtils.getSessionFactory()).delete(CurrentSession.currentCopia);
-        stopAudio();  // Detiene el audio antes de salir
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Eliminar Copia");
+        alert.setHeaderText("¿Estás seguro de que deseas eliminar esta copia?");
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            new CopiaDAO(HibernateUtils.getSessionFactory()).delete(CurrentSession.currentCopia);
+        }
+        stopAudio();
         HelloApplication.loadFXML("view/film-view.fxml", "Lista Copias");
     }
 
+    /**
+     * Reproduce la pista de audio asociada a la copia actual si está disponible.
+     */
     private void playSoundtrack() {
         String audioFile = CurrentSession.currentCopia.getAudio();
         if (audioFile != null) {
@@ -76,12 +105,22 @@ public class DetailsController implements Initializable {
         }
     }
 
+    /**
+     * Detiene la reproducción de la pista de audio si está en reproducción.
+     */
     public void stopAudio() {
         if (audioPlayer != null) {
             audioPlayer.stopSoundtrack();
         }
     }
 
+    /**
+     * Inicializa la vista de detalles, configurando los campos de texto y otros elementos
+     * de la interfaz con los datos de la copia actual y comenzando la reproducción del audio.
+     *
+     * @param url La URL utilizada para resolver rutas relativas.
+     * @param resourceBundle Los recursos que se utilizan para localizar los elementos de la vista.
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         titulopeli.setText(CurrentSession.currentCopia.getPelicula().getTitulo());
@@ -104,4 +143,3 @@ public class DetailsController implements Initializable {
         playSoundtrack();
     }
 }
-
